@@ -25,27 +25,27 @@ export const Home = () => {
     {
       title: "Competitive Mental Math",
       link: "#",
-      image: "YOUR_IMAGE_URL_HERE_1"
+      image: "https://raw.githubusercontent.com/janicejoee/portfolio/main/src/assets/images/hobby-math.jpeg"
     },
     {
       title: "Piano",
       link: "https://www.youtube.com/watch?v=4h5QeWyjAEw",
-      image: "YOUR_IMAGE_URL_HERE_2"
+      image: "https://raw.githubusercontent.com/janicejoee/portfolio/main/src/assets/images/hobby-piano.png"
     },
     {
       title: "Film Photography",
       link: "https://www.instagram.com/filmcucikeringpake",
-      image: "YOUR_IMAGE_URL_HERE_3"
+      image: "https://raw.githubusercontent.com/janicejoee/portfolio/main/src/assets/images/hobby-photo.jpg"
     },
     {
       title: "Food Blogging",
       link: "https://www.instagram.com/brokecolumbian",
-      image: "YOUR_IMAGE_URL_HERE_3"
+      image: "https://raw.githubusercontent.com/janicejoee/portfolio/main/src/assets/images/hobby-food.jpeg"
     },
     {
       title: "Taekwondo",
       link: "#",
-      image: "YOUR_IMAGE_URL_HERE_3"
+      image: "https://raw.githubusercontent.com/janicejoee/portfolio/main/src/assets/images/hobby-taekwondo.JPG"
     },
     ];
 
@@ -220,7 +220,7 @@ export const Home = () => {
                     alt={hobby.title} 
                     className="w-full h-full object-cover group-hover:scale-110 transition duration-300" 
                   />
-                  <div className="absolute inset-0 bg-black bg-opacity-40 group-hover:bg-opacity-50 transition flex items-end">
+                  <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent group-hover:from-black/80 transition flex items-end">
                     <h3 className="text-2xl font-bold text-white p-6 w-full">{hobby.title}</h3>
                   </div>
                 </div>
