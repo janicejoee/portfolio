@@ -1,72 +1,9 @@
 import React, { useState } from 'react';
 import { Menu, Github, Linkedin, Mail, ExternalLink, X } from 'lucide-react';
+import { projects, hobbies, skills } from '../assets/data';
 
 export const Home = () => {
-    const [isMenuOpen, setIsMenuOpen] = useState(false);
-
-    const projects = [
-    {
-      title: "Mood-based Activities Recommender",
-      description: "A database-focus application built with Flask and HTML/CSS",
-      tags: ["PostgreSQL",  "HTML/CSS", "Flask", "Google Cloud"],
-      link: "https://github.com/kimmyna/w4111-proj1",
-      image: "YOUR_IMAGE_URL_HERE_1"
-    },
-    {
-      title: "Campus Wellness Smart Calendar",
-      description: "A smart multi-functional calendar integrated with Google Gemini",
-      tags: ["LangChain", "Streamlit", "MongoDB", "Google Gemini"],
-      link: "https://github.com/Sallyliubj/smart-calendar-chatbot",
-      image: "YOUR_IMAGE_URL_HERE_2"
-    },
-    ];
-
-    const hobbies = [
-    {
-      title: "Competitive Mental Math",
-      link: "#",
-      image: "https://raw.githubusercontent.com/janicejoee/portfolio/main/src/assets/images/hobby-math.jpeg"
-    },
-    {
-      title: "Piano",
-      link: "https://www.youtube.com/watch?v=4h5QeWyjAEw",
-      image: "https://raw.githubusercontent.com/janicejoee/portfolio/main/src/assets/images/hobby-piano.png"
-    },
-    {
-      title: "Film Photography",
-      link: "https://www.instagram.com/filmcucikeringpake",
-      image: "https://raw.githubusercontent.com/janicejoee/portfolio/main/src/assets/images/hobby-photo.jpg"
-    },
-    {
-      title: "Food Blogging",
-      link: "https://www.instagram.com/brokecolumbian",
-      image: "https://raw.githubusercontent.com/janicejoee/portfolio/main/src/assets/images/hobby-food.jpeg"
-    },
-    {
-      title: "Taekwondo",
-      link: "#",
-      image: "https://raw.githubusercontent.com/janicejoee/portfolio/main/src/assets/images/hobby-taekwondo.JPG"
-    },
-    ];
-
-    const skills = [
-    {
-      category: "Languages",
-      items: ["Python", "Java", "C", "SQL", "JavaScript", "TypeScript", "VBA", "MATLAB"],
-    },
-    {
-      category: "Frameworks & Libraries",
-      items: ["React", "Next.js", "Flask", "Pandas", "LangChain", "BeautifulSoup", "Selenium"],
-    },
-    {
-      category: "Databases",
-      items: ["PostgreSQL", "MongoDB"],
-    },
-    {
-      category: "Cloud & Tools",
-      items: ["AWS", "Docker", "Git", "Tableau", "Figma"],
-    },
-  ];
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
     <div className="min-h-screen bg-gray-50">
@@ -148,7 +85,11 @@ export const Home = () => {
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {projects.map((project, index) => (
               <div key={index} className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition">
-                <img src={project.image} alt={project.title} className="h-48 w-full object-cover" />
+                {project.image && !project.image.includes('YOUR_IMAGE_URL_HERE') ? (
+                  <img src={project.image} alt={project.title} className="h-48 w-full object-cover" />
+                ) : (
+                  <div className="h-48 w-full bg-gradient-to-br from-blue-500 to-purple-600"></div>
+                )}
                 <div className="p-6">
                   <h3 className="text-xl font-bold text-gray-900 mb-2">{project.title}</h3>
                   <p className="text-gray-600 mb-4">{project.description}</p>
@@ -159,7 +100,12 @@ export const Home = () => {
                       </span>
                     ))}
                   </div>
-                  <a href={project.link} className="inline-flex items-center text-blue-600 hover:text-blue-700">
+                  <a 
+                    href={project.link}
+                    target="_blank"
+                    rel="noopener noreferrer" 
+                    className="inline-flex items-center text-blue-600 hover:text-blue-700"
+                  >
                     View Project <ExternalLink size={16} className="ml-2" />
                   </a>
                 </div>
