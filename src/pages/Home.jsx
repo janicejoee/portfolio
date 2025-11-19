@@ -23,18 +23,28 @@ export const Home = () => {
 
     const hobbies = [
     {
-      title: "Photography",
-      link: "YOUR_LINK_HERE_1",
+      title: "Competitive Mental Math",
+      link: "#",
       image: "YOUR_IMAGE_URL_HERE_1"
     },
     {
-      title: "Traveling",
-      link: "YOUR_LINK_HERE_2",
+      title: "Piano",
+      link: "https://www.youtube.com/watch?v=4h5QeWyjAEw",
       image: "YOUR_IMAGE_URL_HERE_2"
     },
     {
-      title: "Reading",
-      link: "YOUR_LINK_HERE_3",
+      title: "Film Photography",
+      link: "https://www.instagram.com/filmcucikeringpake",
+      image: "YOUR_IMAGE_URL_HERE_3"
+    },
+    {
+      title: "Food Blogging",
+      link: "https://www.instagram.com/brokecolumbian",
+      image: "YOUR_IMAGE_URL_HERE_3"
+    },
+    {
+      title: "Taekwondo",
+      link: "#",
       image: "YOUR_IMAGE_URL_HERE_3"
     },
     ];
