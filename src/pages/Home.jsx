@@ -79,7 +79,7 @@ export const Home = () => {
       </section>
 
       {/* Projects Section */}
-      <section id="projects" className="py-20 bg-gray-50">
+      <section id="projects" className="py-20 bg-emerald-50">
         <div className="max-w-6xl mx-auto px-4">
           <h2 className="text-3xl font-bold text-gray-900 mb-12 text-center">My Projects</h2>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -149,7 +149,7 @@ hover:bg-emerald-100 hover:text-emerald-600 transition"
       </section>
       
       {/* Hobbies Section */}
-      <section id="hobbies" className="py-20 bg-gray-50">
+      <section id="hobbies" className="py-20 bg-emerald-50">
         <div className="max-w-6xl mx-auto px-4">
           <h2 className="text-3xl font-bold text-gray-900 mb-12 text-center">Hobbies</h2>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
