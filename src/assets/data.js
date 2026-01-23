@@ -1,5 +1,12 @@
 export const projects = [
   {
+    title: "Columbia Sublet Cloud Platform",
+    description: "A database-focus application built with PostgreSQL, Flask, and HTML/CSS",
+    tags: ["GCP Cloud Run", "GCP Compute Engine", "Cloud Functions", "Restful API", "MySQL", "Cloud SQL", "OAuth2/OIDC"],
+    link: "https://github.com/UNKNOWN-CloudApp",
+    image: "YOUR_IMAGE_URL_HERE_1"
+  },
+  {
     title: "Mood-based Activities Recommender",
     description: "A database-focus application built with PostgreSQL, Flask, and HTML/CSS",
     tags: ["PostgreSQL", "HTML/CSS", "Flask", "Google Cloud"],
@@ -53,18 +60,14 @@ export const hobbies = [
 export const skills = [
   {
     category: "Languages",
-    items: ["Python", "Java", "C", "SQL", "JavaScript", "TypeScript", "VBA", "MATLAB"],
+    items: ["Python", "Java", "C", "R", "SQL", "JavaScript", "TypeScript", "VBA", "MATLAB"],
   },
   {
     category: "Frameworks & Libraries",
     items: ["React", "Next.js", "Flask", "Pandas", "LangChain", "BeautifulSoup", "Selenium"],
   },
   {
-    category: "Databases",
-    items: ["PostgreSQL", "MongoDB"],
-  },
-  {
     category: "Cloud & Tools",
-    items: ["AWS", "Docker", "Git", "Tableau", "Figma"],
+    items: ["AWS (Lambda, API Gateway, DynamoDB, S3)", "GCP (Vertex AI, Cloud Run, GCE)", "Docker", "Git", "Tableau", "Figma"],
   },
 ];

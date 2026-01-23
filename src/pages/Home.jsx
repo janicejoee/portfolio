@@ -6,7 +6,7 @@ export const Home = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
-    <div className="min-h-screen bg-gray-50">
+    <div className="min-h-screen bg-emerald-50">
       {/* Navigation */}
       <nav className="bg-white shadow-sm fixed w-full top-0 z-50">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -50,17 +50,17 @@ export const Home = () => {
       <section className="pt-32 pb-20 px-4">
         <div className="max-w-4xl mx-auto text-center">
           <h1 className="text-5xl md:text-6xl font-bold text-gray-900 mb-6">
-            Hi, I'm <span className="text-blue-600">Janice</span>
+            Hi, I'm <span className="text-emerald-600">Janice</span>
           </h1>
           <p className="text-xl md:text-2xl text-gray-600 mb-8">
             Mathematics & Computer Science at Columbia University
           </p>
           <div className="flex justify-center space-x-4">
-            <a href="#contact" className="bg-blue-600 text-white px-8 py-3 rounded-lg hover:bg-blue-700 transition">
+            <a href="#contact" className="bg-emerald-600 text-white px-8 py-3 rounded-lg hover:bg-emerald-700 transition">
               Get in Touch
             </a>
-            <a href="#projects" className="border-2 border-blue-600 text-blue-600 px-8 py-3 rounded-lg hover:bg-blue-50 transition">
-              View Work
+            <a href="#projects" className="border-2 border-emerald-600 text-emerald-600 px-8 py-3 rounded-lg hover:bg-emerald-50 transition">
+              View Projects
             </a>
           </div>
         </div>
@@ -88,14 +88,14 @@ export const Home = () => {
                 {project.image && !project.image.includes('YOUR_IMAGE_URL_HERE') ? (
                   <img src={project.image} alt={project.title} className="h-48 w-full object-cover" />
                 ) : (
-                  <div className="h-48 w-full bg-gradient-to-br from-blue-500 to-purple-600"></div>
+                  <div className="h-48 w-full bg-gradient-to-br from-emerald-500 to-teal-600"></div>
                 )}
                 <div className="p-6">
                   <h3 className="text-xl font-bold text-gray-900 mb-2">{project.title}</h3>
                   <p className="text-gray-600 mb-4">{project.description}</p>
                   <div className="flex flex-wrap gap-2 mb-4">
                     {project.tags.map((tag, i) => (
-                      <span key={i} className="bg-blue-100 text-blue-600 text-sm px-3 py-1 rounded-full">
+                      <span key={i} className="bg-emerald-100 text-emerald-600 text-sm px-3 py-1 rounded-full">
                         {tag}
                       </span>
                     ))}
@@ -104,7 +104,7 @@ export const Home = () => {
                     href={project.link}
                     target="_blank"
                     rel="noopener noreferrer" 
-                    className="inline-flex items-center text-blue-600 hover:text-blue-700"
+                    className="inline-flex items-center text-emerald-600 hover:text-emerald-700"
                   >
                     View Project <ExternalLink size={16} className="ml-2" />
                   </a>
@@ -135,7 +135,8 @@ export const Home = () => {
                   {group.items.map((skill, index) => (
                     <div
                       key={index}
-                      className="bg-gray-100 px-4 py-2 rounded-lg text-gray-800 font-medium hover:bg-blue-100 hover:text-blue-600 transition"
+                      className="bg-gray-100 px-4 py-2 rounded-lg text-gray-800 font-medium
+hover:bg-emerald-100 hover:text-emerald-600 transition"
                     >
                       {skill}
                     </div>
@@ -184,15 +185,15 @@ export const Home = () => {
             I'm on the lookout for Full-time job opportunities starting summer 2026!
           </p>
           <div className="flex justify-center space-x-6">
-            <a href="mailto:janice.joe@columbia.edu" className="flex items-center space-x-2 text-gray-600 hover:text-blue-600 transition">
+            <a href="mailto:janice.joe@columbia.edu" className="flex items-center space-x-2 text-gray-600 hover:text-emerald-600 transition">
               <Mail size={24} />
               <span>Email</span>
             </a>
-            <a href="https://github.com/janicejoee" className="flex items-center space-x-2 text-gray-600 hover:text-blue-600 transition">
+            <a href="https://github.com/janicejoee" className="flex items-center space-x-2 text-gray-600 hover:text-emerald-600 transition">
               <Github size={24} />
               <span>GitHub</span>
             </a>
-            <a href="https://linkedin.com/in/janicejoe" className="flex items-center space-x-2 text-gray-600 hover:text-blue-600 transition">
+            <a href="https://linkedin.com/in/janicejoe" className="flex items-center space-x-2 text-gray-600 hover:text-emerald-600 transition">
               <Linkedin size={24} />
               <span>LinkedIn</span>
             </a>
@@ -201,7 +202,7 @@ export const Home = () => {
       </section>
 
       {/* Footer */}
-      <footer className="bg-gray-900 text-white py-8">
+      <footer className="bg-emerald-900 text-emerald-50 py-8">
         <div className="max-w-6xl mx-auto px-4 text-center">
           <p>&copy; 2025 Veronica Janice Joe. All rights reserved.</p>
         </div>
