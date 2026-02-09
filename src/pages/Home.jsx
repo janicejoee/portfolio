@@ -1,76 +1,55 @@
-import React, { useState } from 'react';
-import { Menu, Github, Linkedin, Mail, ExternalLink, X } from 'lucide-react';
+import React from 'react';
+import { Mail, ExternalLink } from 'lucide-react';
 import { projects, hobbies, skills } from '../assets/data';
+import './Home.css';
+import {IconGitHub, IconLinkedIn} from '../assets/icons.jsx';
 
 export const Home = () => {
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
-
   return (
-    <div className="min-h-screen bg-emerald-50">
+    <div className="page">
       {/* Navigation */}
-      <nav className="bg-white shadow-sm fixed w-full top-0 z-50">
-        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex justify-between items-center h-16">
-            <div className="text-xl font-bold text-gray-800">Veronica Janice Joe</div>
-            
-            {/* Desktop Menu */}
-            <div className="hidden md:flex space-x-8">
-              <a href="#about" className="text-gray-600 hover:text-gray-900">About</a>
-              <a href="#projects" className="text-gray-600 hover:text-gray-900">Projects</a>
-              <a href="#skills" className="text-gray-600 hover:text-gray-900">Skills</a>
-              <a href="#hobbies" className="text-gray-600 hover:text-gray-900">Hobbies</a>
-              <a href="#contact" className="text-gray-600 hover:text-gray-900">Contact</a>
+      <nav className="nav">
+        <div className="nav-container">
+          <div className="nav-inner">
+            <div className="nav-brand">Veronica Janice Joe</div>
+            <div className="nav-links">
+              <a href="#about" className="nav-link">About</a>
+              <a href="#projects" className="nav-link">Projects</a>
+              <a href="#skills" className="nav-link">Skills</a>
+              <a href="#hobbies" className="nav-link">Hobbies</a>
+              <a href="#contact" className="nav-link">Contact</a>
             </div>
-
-            {/* Mobile Menu Button */}
-            <button 
-              className="md:hidden"
-              onClick={() => setIsMenuOpen(!isMenuOpen)}
-            >
-              {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
-            </button>
           </div>
         </div>
-
-        {/* Mobile Menu */}
-        {isMenuOpen && (
-          <div className="md:hidden bg-white border-t">
-            <div className="px-4 pt-2 pb-4 space-y-2">
-              <a href="#about" className="block py-2 text-gray-600 hover:text-gray-900">About</a>
-              <a href="#projects" className="block py-2 text-gray-600 hover:text-gray-900">Projects</a>
-              <a href="#skills" className="block py-2 text-gray-600 hover:text-gray-900">Skills</a>
-              <a href="#hobbies" className="block py-2 text-gray-600 hover:text-gray-900">Hobbies</a>
-              <a href="#contact" className="block py-2 text-gray-600 hover:text-gray-900">Contact</a>
-            </div>
-          </div>
-        )}
       </nav>
 
       {/* Hero Section */}
-      <section className="pt-32 pb-20 px-4">
-        <div className="max-w-4xl mx-auto text-center">
-          <h1 className="text-5xl md:text-6xl font-bold text-gray-900 mb-6">
-            Hi, I'm <span className="text-emerald-600">Janice</span>
+      <section className="hero">
+        <div className="hero-inner">
+          <h1 className="hero-title">
+            Hi, I'm <span className="hero-title-accent">Janice</span>
           </h1>
-          <p className="text-xl md:text-2xl text-gray-600 mb-8">
-            Mathematics & Computer Science at Columbia University
+          <p className="hero-subtitle">
+            Columbia'26 | Mathematics & Computer Science
           </p>
-          <div className="flex justify-center space-x-4">
-            <a href="#contact" className="bg-emerald-600 text-white px-8 py-3 rounded-lg hover:bg-emerald-700 transition">
-              Get in Touch
+          <div className="hero-actions">
+            <a href="https://github.com/janicejoee" target="_blank" rel="noopener noreferrer" className="btn-primary">
+              <IconGitHub size={22} />
+              <span>GitHub</span>
             </a>
-            <a href="#projects" className="border-2 border-emerald-600 text-emerald-600 px-8 py-3 rounded-lg hover:bg-emerald-50 transition">
-              View Projects
+            <a href="https://portland-my.sharepoint.com/:b:/g/personal/veronjoe2-c_my_cityu_edu_hk/IQDVYmGeF30jQ6sIW2MWLTtRAWH6QajAIP-_FX9nO7J1PCw?e=U3SjsN" target="_blank" rel="noopener noreferrer" className="btn-secondary">
+              <ExternalLink size={20} />
+              <span>Resume</span>
             </a>
           </div>
         </div>
       </section>
 
       {/* About Section */}
-      <section id="about" className="py-20 bg-white">
-        <div className="max-w-4xl mx-auto px-4">
-          <h2 className="text-3xl font-bold text-gray-900 mb-8 text-center">About Me</h2>
-          <p className="text-lg text-gray-600 leading-relaxed">
+      <section id="about" className="section">
+        <div className="section-inner">
+          <h2 className="section-title">About Me</h2>
+          <p className="about-text">
             I've had the chance to work across multiple countries and industries—from a wealth management firm in Hong Kong, to a private bank in Indonesia, and most recently at Amazon in the United States. These roles exposed me to diverse teams, fast-moving environments, and complex problem-solving, all of which helped shape the way I approach both technical and collaborative work.
             <br/><br/>
             Throughout my academic and professional journey, I've also worked on a wide range of projects spanning AI, data analytics, and full-stack development. Whether it's building predictive models, analyzing real-world datasets, or creating end-to-end applications, I enjoy working across the stack and turning ideas into practical solutions.
@@ -79,34 +58,27 @@ export const Home = () => {
       </section>
 
       {/* Projects Section */}
-      <section id="projects" className="py-20 bg-emerald-50">
-        <div className="max-w-6xl mx-auto px-4">
-          <h2 className="text-3xl font-bold text-gray-900 mb-12 text-center">My Projects</h2>
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+      <section id="projects" className="section-alt">
+        <div className="section-inner-wide">
+          <h2 className="section-title-spaced">My Projects</h2>
+          <div className="project-grid">
             {projects.map((project, index) => (
-              <div key={index} className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition">
+              <div key={index} className="project-card">
                 {project.image && !project.image.includes('YOUR_IMAGE_URL_HERE') ? (
-                  <img src={project.image} alt={project.title} className="h-48 w-full object-cover" />
+                  <img src={project.image} alt={project.title} className="project-card-image" />
                 ) : (
-                  <div className="h-48 w-full bg-gradient-to-br from-emerald-500 to-teal-600"></div>
+                  <div className="project-card-placeholder"></div>
                 )}
-                <div className="p-6">
-                  <h3 className="text-xl font-bold text-gray-900 mb-2">{project.title}</h3>
-                  <p className="text-gray-600 mb-4">{project.description}</p>
-                  <div className="flex flex-wrap gap-2 mb-4">
+                <div className="project-card-body">
+                  <h3 className="project-card-title">{project.title}</h3>
+                  <p className="project-card-desc">{project.description}</p>
+                  <div className="project-tags">
                     {project.tags.map((tag, i) => (
-                      <span key={i} className="bg-emerald-100 text-emerald-600 text-sm px-3 py-1 rounded-full">
-                        {tag}
-                      </span>
+                      <span key={i} className="project-tag">{tag}</span>
                     ))}
                   </div>
-                  <a 
-                    href={project.link}
-                    target="_blank"
-                    rel="noopener noreferrer" 
-                    className="inline-flex items-center text-emerald-600 hover:text-emerald-700"
-                  >
-                    View Project <ExternalLink size={16} className="ml-2" />
+                  <a href={project.link} target="_blank" rel="noopener noreferrer" className="project-link">
+                    View Project <ExternalLink size={16} className="project-link-icon" />
                   </a>
                 </div>
               </div>
@@ -116,30 +88,16 @@ export const Home = () => {
       </section>
         
       {/* Skills Section */}
-      <section id="skills" className="py-20 bg-white">
-        <div className="max-w-4xl mx-auto px-4">
-          <h2 className="text-3xl font-bold text-gray-900 mb-12 text-center">
-            Skills & Technologies
-          </h2>
-
-          <div className="space-y-10">
+      <section id="skills" className="section">
+        <div className="section-inner">
+          <h2 className="section-title-spaced">Skills & Technologies</h2>
+          <div className="skills-list">
             {skills.map((group, idx) => (
-              <div key={idx} className="text-center">
-                {/* category title */}
-                <h3 className="text-xl font-semibold text-gray-900 mb-4">
-                  {group.category}
-                </h3>
-
-                {/* skill tags */}
-                <div className="flex flex-wrap justify-center gap-3">
+              <div key={idx} className="skill-group">
+                <h3 className="skill-group-title">{group.category}</h3>
+                <div className="skill-tags">
                   {group.items.map((skill, index) => (
-                    <div
-                      key={index}
-                      className="bg-gray-100 px-4 py-2 rounded-lg text-gray-800 font-medium
-hover:bg-emerald-100 hover:text-emerald-600 transition"
-                    >
-                      {skill}
-                    </div>
+                    <div key={index} className="skill-tag">{skill}</div>
                   ))}
                 </div>
               </div>
@@ -149,26 +107,22 @@ hover:bg-emerald-100 hover:text-emerald-600 transition"
       </section>
       
       {/* Hobbies Section */}
-      <section id="hobbies" className="py-20 bg-emerald-50">
-        <div className="max-w-6xl mx-auto px-4">
-          <h2 className="text-3xl font-bold text-gray-900 mb-12 text-center">Hobbies</h2>
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+      <section id="hobbies" className="section-alt">
+        <div className="section-inner-wide">
+          <h2 className="section-title-spaced">Hobbies</h2>
+          <div className="hobby-grid">
             {hobbies.map((hobby, index) => (
-              <a 
-                key={index} 
+              <a
+                key={index}
                 href={hobby.link}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="group bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition cursor-pointer"
+                className="group hobby-card"
               >
-                <div className="relative h-64 overflow-hidden">
-                  <img 
-                    src={hobby.image} 
-                    alt={hobby.title} 
-                    className="w-full h-full object-cover group-hover:scale-110 transition duration-300" 
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent group-hover:from-black/80 transition flex items-end">
-                    <h3 className="text-2xl font-bold text-white p-6 w-full">{hobby.title}</h3>
+                <div className="hobby-image-wrap">
+                  <img src={hobby.image} alt={hobby.title} className="hobby-image" />
+                  <div className="hobby-overlay">
+                    <h3 className="hobby-title">{hobby.title}</h3>
                   </div>
                 </div>
               </a>
@@ -178,23 +132,23 @@ hover:bg-emerald-100 hover:text-emerald-600 transition"
       </section>
 
       {/* Contact Section */}
-      <section id="contact" className="py-20 bg-white">
-        <div className="max-w-4xl mx-auto px-4 text-center">
-          <h2 className="text-3xl font-bold text-gray-900 mb-8">Get In Touch</h2>
-          <p className="text-lg text-gray-600 mb-8">
-            I'm on the lookout for Full-time job opportunities starting summer 2026!
+      <section id="contact" className="section">
+        <div className="contact-inner">
+          <h2 className="contact-title">Get In Touch</h2>
+          <p className="contact-text">
+            I'm on the lookout for full-time job opportunities starting summer 2026!
           </p>
-          <div className="flex justify-center space-x-6">
-            <a href="mailto:janice.joe@columbia.edu" className="flex items-center space-x-2 text-gray-600 hover:text-emerald-600 transition">
+          <div className="contact-links">
+            <a href="mailto:janice.joe@columbia.edu" target="_blank" rel="noopener noreferrer" className="contact-link">
               <Mail size={24} />
               <span>Email</span>
             </a>
-            <a href="https://github.com/janicejoee" className="flex items-center space-x-2 text-gray-600 hover:text-emerald-600 transition">
-              <Github size={24} />
+            <a href="https://github.com/janicejoee" target="_blank" rel="noopener noreferrer" className="contact-link">
+              <IconGitHub size={24} />
               <span>GitHub</span>
             </a>
-            <a href="https://linkedin.com/in/janicejoe" className="flex items-center space-x-2 text-gray-600 hover:text-emerald-600 transition">
-              <Linkedin size={24} />
+            <a href="https://linkedin.com/in/janicejoe" target="_blank" rel="noopener noreferrer" className="contact-link">
+              <IconLinkedIn size={24} />
               <span>LinkedIn</span>
             </a>
           </div>
@@ -202,8 +156,8 @@ hover:bg-emerald-100 hover:text-emerald-600 transition"
       </section>
 
       {/* Footer */}
-      <footer className="bg-emerald-900 text-emerald-50 py-8">
-        <div className="max-w-6xl mx-auto px-4 text-center">
+      <footer className="footer">
+        <div className="footer-inner">
           <p>&copy; 2025 Veronica Janice Joe. All rights reserved.</p>
         </div>
       </footer>

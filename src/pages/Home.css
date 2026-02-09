@@ -1,0 +1,177 @@
+@import "tailwindcss";
+
+/* Page */
+.page {
+  @apply min-h-screen bg-pink-50;
+}
+
+/* Navigation */
+.nav {
+  @apply bg-white shadow-sm fixed w-full top-0 z-50;
+}
+.nav-container {
+  @apply max-w-6xl mx-auto px-4 sm:px-6 lg:px-8;
+}
+.nav-inner {
+  @apply flex justify-between items-center h-16;
+}
+.nav-brand {
+  @apply text-xl font-bold text-gray-800;
+}
+.nav-links {
+  @apply flex space-x-8;
+}
+.nav-link {
+  @apply text-gray-600 hover:text-gray-900;
+}
+
+/* Hero */
+.hero {
+  @apply pt-32 pb-20 px-4;
+}
+.hero-inner {
+  @apply max-w-4xl mx-auto text-center;
+}
+.hero-title {
+  @apply text-5xl md:text-6xl font-bold text-gray-900 mb-6;
+}
+.hero-title-accent {
+  @apply text-pink-600;
+}
+.hero-subtitle {
+  @apply text-xl md:text-2xl text-gray-600 mb-8;
+}
+.hero-actions {
+  @apply flex flex-wrap justify-center gap-4;
+}
+.btn-primary {
+  @apply inline-flex items-center justify-center gap-2.5 bg-pink-600 text-white px-6 py-3.5 rounded-xl font-medium shadow-md shadow-pink-600/25 hover:bg-pink-700 hover:shadow-lg hover:shadow-pink-600/30 hover:-translate-y-0.5 transition-all duration-200;
+}
+.btn-secondary {
+  @apply inline-flex items-center justify-center gap-2.5 border-2 border-pink-600 text-pink-600 bg-white/80 px-6 py-3.5 rounded-xl font-medium hover:bg-pink-50 hover:border-pink-700 hover:text-pink-700 hover:-translate-y-0.5 transition-all duration-200;
+}
+
+/* Sections (shared) */
+.section {
+  @apply py-20 bg-white;
+}
+.section-alt {
+  @apply py-20 bg-pink-50;
+}
+.section-inner {
+  @apply max-w-4xl mx-auto px-4;
+}
+.section-inner-wide {
+  @apply max-w-6xl mx-auto px-4;
+}
+.section-title {
+  @apply text-3xl font-bold text-gray-900 mb-8 text-center;
+}
+.section-title-spaced {
+  @apply text-3xl font-bold text-gray-900 mb-12 text-center;
+}
+.section-text {
+  @apply text-lg text-gray-600 leading-relaxed;
+}
+
+/* About */
+.about-text {
+  @apply text-lg text-gray-600 leading-relaxed;
+}
+
+/* Projects */
+.project-grid {
+  @apply grid md:grid-cols-2 lg:grid-cols-3 gap-8;
+}
+.project-card {
+  @apply bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition;
+}
+.project-card-image {
+  @apply h-48 w-full object-cover;
+}
+.project-card-placeholder {
+  @apply h-48 w-full bg-gradient-to-br from-pink-500 to-pink-700;
+}
+.project-card-body {
+  @apply p-6;
+}
+.project-card-title {
+  @apply text-xl font-bold text-gray-900 mb-2;
+}
+.project-card-desc {
+  @apply text-gray-600 mb-4;
+}
+.project-tags {
+  @apply flex flex-wrap gap-2 mb-4;
+}
+.project-tag {
+  @apply bg-pink-100 text-pink-600 text-sm px-3 py-1 rounded-full;
+}
+.project-link {
+  @apply inline-flex items-center text-pink-600 hover:text-pink-700;
+}
+.project-link-icon {
+  @apply ml-2;
+}
+
+/* Skills */
+.skills-list {
+  @apply space-y-10;
+}
+.skill-group {
+  @apply text-center;
+}
+.skill-group-title {
+  @apply text-xl font-semibold text-gray-900 mb-4;
+}
+.skill-tags {
+  @apply flex flex-wrap justify-center gap-3;
+}
+.skill-tag {
+  @apply bg-gray-100 px-4 py-2 rounded-lg text-gray-800 font-medium hover:bg-pink-100 hover:text-pink-600 transition;
+}
+
+/* Hobbies */
+.hobby-grid {
+  @apply grid md:grid-cols-2 lg:grid-cols-3 gap-8;
+}
+.hobby-card {
+  @apply bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition cursor-pointer;
+}
+.hobby-image-wrap {
+  @apply relative h-64 overflow-hidden;
+}
+.hobby-image {
+  @apply w-full h-full object-cover group-hover:scale-110 transition duration-300;
+}
+.hobby-overlay {
+  @apply absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent group-hover:from-black/80 transition flex items-end;
+}
+.hobby-title {
+  @apply text-2xl font-bold text-white p-6 w-full;
+}
+
+/* Contact */
+.contact-inner {
+  @apply max-w-4xl mx-auto px-4 text-center;
+}
+.contact-title {
+  @apply text-3xl font-bold text-gray-900 mb-8;
+}
+.contact-text {
+  @apply text-lg text-gray-600 mb-8;
+}
+.contact-links {
+  @apply flex justify-center space-x-6;
+}
+.contact-link {
+  @apply flex items-center space-x-2 text-gray-600 hover:text-pink-600 transition;
+}
+
+/* Footer */
+.footer {
+  @apply bg-pink-900 text-pink-50 py-8;
+}
+.footer-inner {
+  @apply max-w-6xl mx-auto px-4 text-center;
+}
