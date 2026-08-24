@@ -37,7 +37,7 @@ export const Home = () => {
               <IconGitHub size={22} />
               <span>GitHub</span>
             </a>
-            <a href="https://portland-my.sharepoint.com/:b:/g/personal/veronjoe2-c_my_cityu_edu_hk/IQDVYmGeF30jQ6sIW2MWLTtRAWH6QajAIP-_FX9nO7J1PCw?e=U3SjsN" target="_blank" rel="noopener noreferrer" className="btn-secondary">
+            <a href="https://drive.google.com/file/d/1yLS9Fg-Byuh8vC165zAXgWyx4lEyky-Q/view?usp=sharing" target="_blank" rel="noopener noreferrer" className="btn-secondary">
               <ExternalLink size={20} />
               <span>Resume</span>
             </a>
