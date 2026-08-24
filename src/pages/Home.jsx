@@ -37,9 +37,9 @@ export const Home = () => {
               <IconGitHub size={22} />
               <span>GitHub</span>
             </a>
-            <a href="https://drive.google.com/file/d/1yLS9Fg-Byuh8vC165zAXgWyx4lEyky-Q/view?usp=sharing" target="_blank" rel="noopener noreferrer" className="btn-secondary">
-              <ExternalLink size={20} />
-              <span>Resume</span>
+            <a href="https://linkedin.com/in/janicejoe" target="_blank" rel="noopener noreferrer" className="btn-secondary">
+              <IconLinkedIn size={20} />
+              <span>LinkedIn</span>
             </a>
           </div>
         </div>
