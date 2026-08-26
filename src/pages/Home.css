@@ -81,37 +81,28 @@
 
 /* Projects */
 .project-grid {
-  @apply grid md:grid-cols-2 lg:grid-cols-3 gap-8;
+  @apply grid md:grid-cols-2 gap-5;
 }
 .project-card {
-  @apply bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition;
+  @apply flex flex-col gap-3 bg-white rounded-xl border border-pink-100 p-6 shadow-sm hover:border-pink-300 hover:shadow-md hover:-translate-y-0.5 transition-all duration-200;
 }
-.project-card-image {
-  @apply h-48 w-full object-cover;
-}
-.project-card-placeholder {
-  @apply h-48 w-full bg-gradient-to-br from-pink-500 to-pink-700;
-}
-.project-card-body {
-  @apply p-6;
+.project-card-top {
+  @apply flex items-start justify-between gap-3;
 }
 .project-card-title {
-  @apply text-xl font-bold text-gray-900 mb-2;
+  @apply text-xl font-bold text-gray-900 leading-snug;
 }
 .project-card-desc {
-  @apply text-gray-600 mb-4;
+  @apply text-gray-600 leading-relaxed flex-1;
 }
 .project-tags {
-  @apply flex flex-wrap gap-2 mb-4;
+  @apply flex flex-wrap gap-2 pt-1;
 }
 .project-tag {
-  @apply bg-pink-100 text-pink-600 text-sm px-3 py-1 rounded-full;
+  @apply bg-pink-50 text-pink-700 text-sm px-3 py-1 rounded-lg;
 }
 .project-link {
-  @apply inline-flex items-center text-pink-600 hover:text-pink-700;
-}
-.project-link-icon {
-  @apply ml-2;
+  @apply shrink-0 inline-flex items-center justify-center text-pink-600 hover:text-pink-800 transition-colors;
 }
 
 /* Skills */

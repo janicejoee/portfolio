@@ -1,31 +1,33 @@
 export const projects = [
   {
+    title: "Personal Copilot Finance Tracker",
+    description: "A full-stack AI-powered personal finance tracker for spending analysis and personalized financial insights",
+    tags: ["Plaid", "FastAPI", "PostgreSQL", "React", "Next.js", "LLM"],
+    link: "https://github.com/janicejoee/ai-finance-tracker",
+  },
+  {
     title: "Columbia Sublet Cloud Platform",
     description: "A database-focus application built with PostgreSQL, Flask, and HTML/CSS",
     tags: ["GCP Cloud Run", "GCP Compute Engine", "Cloud Functions", "Restful API", "MySQL", "Cloud SQL", "OAuth2/OIDC"],
     link: "https://github.com/UNKNOWN-CloudApp",
-    image: "YOUR_IMAGE_URL_HERE_1"
   },
   {
     title: "Mood-based Activities Recommender",
     description: "A database-focus application built with PostgreSQL, Flask, and HTML/CSS",
     tags: ["PostgreSQL", "HTML/CSS", "Flask", "Google Cloud"],
     link: "https://github.com/kimmyna/w4111-proj1",
-    image: "YOUR_IMAGE_URL_HERE_1"
   },
   {
     title: "Campus Wellness Smart Calendar",
     description: "A smart multi-functional calendar integrated with Google Gemini",
     tags: ["LangChain", "Streamlit", "MongoDB", "Google Gemini"],
     link: "https://github.com/Sallyliubj/smart-calendar-chatbot",
-    image: "https://raw.githubusercontent.com/janicejoee/portfolio/main/src/assets/images/project-calendar.png"
   },
   {
     title: "Indonesian News Fact Checker",
     description: "A machine learning model for detecting hoax news during Indonesia's presidential election",
     tags: ["Pandas", "Data Analysis", "Machine Learning"],
     link: "https://janicejoe281.wixsite.com/janicesportfolio/fact-checker",
-    image: "YOUR_IMAGE_URL_HERE_2"
   },
 ];
 

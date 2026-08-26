@@ -63,25 +63,28 @@ export const Home = () => {
           <h2 className="section-title-spaced">My Projects</h2>
           <div className="project-grid">
             {projects.map((project, index) => (
-              <div key={index} className="project-card">
-                {project.image && !project.image.includes('YOUR_IMAGE_URL_HERE') ? (
-                  <img src={project.image} alt={project.title} className="project-card-image" />
-                ) : (
-                  <div className="project-card-placeholder"></div>
-                )}
-                <div className="project-card-body">
+              <article key={index} className="project-card">
+                <div className="project-card-top">
                   <h3 className="project-card-title">{project.title}</h3>
-                  <p className="project-card-desc">{project.description}</p>
-                  <div className="project-tags">
-                    {project.tags.map((tag, i) => (
-                      <span key={i} className="project-tag">{tag}</span>
-                    ))}
-                  </div>
-                  <a href={project.link} target="_blank" rel="noopener noreferrer" className="project-link">
-                    View Project <ExternalLink size={16} className="project-link-icon" />
-                  </a>
+                  {project.link && project.link !== '#' && (
+                    <a
+                      href={project.link}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="project-link"
+                      aria-label={`View ${project.title}`}
+                    >
+                      <ExternalLink size={18} />
+                    </a>
+                  )}
                 </div>
-              </div>
+                <p className="project-card-desc">{project.description}</p>
+                <div className="project-tags">
+                  {project.tags.map((tag, i) => (
+                    <span key={i} className="project-tag">{tag}</span>
+                  ))}
+                </div>
+              </article>
             ))}
           </div>
         </div>
