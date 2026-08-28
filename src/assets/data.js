@@ -31,6 +31,69 @@ export const projects = [
   },
 ];
 
+export const workExperiences = [
+  {
+    company: "Amazon",
+    location: "Arlington, VA",
+    role: "Software Engineer Intern",
+    period: "Jun 2025 - Aug 2025",
+    summary: "Built a React Ops Console that consolidated 4+ workflows, including automated DynamoDB and SQS operations, cutting on-call time by ~30%.",
+    logo: new URL("./images/logo-amazon.png", import.meta.url).href,
+  },
+  {
+    company: "Bank Central Asia",
+    location: "Jakarta, ID",
+    role: "Software Engineer Intern",
+    period: "Jun 2024 - Aug 2024",
+    summary: "Built a LangChain LLM agent for SQL querying and financial visualization, and improved a Vertex AI RAG pipeline's accuracy from 55% to 75%.",
+    logo: new URL("./images/logo-bca.png", import.meta.url).href,
+  },
+  {
+    company: "Wealth Management Cube Ltd",
+    location: "Hong Kong, SAR",
+    role: "Data Analytics Intern",
+    period: "Jun 2023 - Aug 2023",
+    summary: "Automated fund data updates and client form transfers, cutting download time from a day to 10 seconds and saving about 2 hours daily.",
+    logo: new URL("./images/logo-wmc.png", import.meta.url).href,
+  },
+];
+
+export const leadershipExperiences = [
+  {
+    organization: "CityUHK Department of Mathematics",
+    location: "Hong Kong, SAR",
+    role: "Cohort Leader",
+    period: "Sep 2022 - May 2024",
+    highlights: [
+      "Represented Computing Mathematics students and communicated feedback to faculty and department leadership",
+      "Coordinated with faculty, staff, and student representatives on programs, regulations, and events",
+      "Supported student activities and initiatives to improve the Computing Mathematics student experience",
+    ],
+  },
+  {
+    organization: "Persatuan Mahasiswa Indonesia CityUHK",
+    location: "Hong Kong, SAR",
+    role: "IndoFest Finance Committee",
+    period: "Feb 2024",
+    highlights: [
+      "Managed event budget and tracked expenses to ensure effective use of funds",
+      "Coordinated with vendors and committee members on payments and financial planning",
+      "Supported financial planning for a large-scale cultural event with 500+ attendees",
+    ],
+  },
+  {
+    organization: "Swire Hotels Hackathon",
+    location: "Hong Kong, SAR",
+    role: "Finalist",
+    period: "Mar 2023",
+    highlights: [
+      "Led an international team of 5 to build an automated interview platform, reducing hiring labor by 90%",
+      "Built a chatbot that generated CV-based interview questions and HR assessment reports",
+      "Developed applicant and HR interfaces with audio/video recording, speech-to-text, and automated report generation",
+    ],
+  },
+];
+
 export const hobbies = [
   {
     title: "Competitive Mental Math",
