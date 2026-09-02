@@ -1,6 +1,6 @@
 import React from 'react';
 import { Mail, ExternalLink } from 'lucide-react';
-import { projects, hobbies, skills, workExperiences, leadershipExperiences } from '../assets/data';
+import { projects, hobbies, skills, languages, workExperiences, leadershipExperiences } from '../assets/data';
 import './Home.css';
 import { IconGitHub, IconLinkedIn } from '../assets/icons.jsx';
 
@@ -21,6 +21,7 @@ export const Home = () => {
               <a href="#leadership" className="nav-link">Leadership</a>
             <a href="#projects" className="nav-link">Projects</a>
             <a href="#skills" className="nav-link">Skills</a>
+            <a href="#languages" className="nav-link">Languages</a>
             <a href="#hobbies" className="nav-link">Hobbies</a>
             <a href="#contact" className="nav-link">Contact</a>
           </div>
@@ -171,7 +172,7 @@ export const Home = () => {
         <div className="wrap">
           <header className="section-header">
             <span className="section-num">{pad(5)}</span>
-            <h2 className="section-title">Skills</h2>
+            <h2 className="section-title">Technical Skills</h2>
           </header>
           <div className="skills-list">
             {skills.map((group, idx) => (
@@ -184,10 +185,28 @@ export const Home = () => {
         </div>
       </section>
 
-      <section id="hobbies" className="section">
+      <section id="languages" className="section">
         <div className="wrap">
           <header className="section-header">
             <span className="section-num">{pad(6)}</span>
+            <h2 className="section-title">Languages</h2>
+          </header>
+          <div className="skills-list">
+            {languages.map((language) => (
+              <div key={language.name} className="language-group">
+                <h3 className="skill-group-title">{language.name}</h3>
+                <p className="skill-items">{language.level}</p>
+                <p className="language-credential">{language.credential ?? ""}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section id="hobbies" className="section">
+        <div className="wrap">
+          <header className="section-header">
+            <span className="section-num">{pad(7)}</span>
             <h2 className="section-title">Hobbies</h2>
           </header>
           <div className="hobby-grid">
@@ -218,7 +237,7 @@ export const Home = () => {
       <section id="contact" className="section contact">
         <div className="wrap">
           <header className="section-header">
-            <span className="section-num">{pad(7)}</span>
+            <span className="section-num">{pad(8)}</span>
             <h2 className="section-title">Contact</h2>
           </header>
           <p className="contact-text">

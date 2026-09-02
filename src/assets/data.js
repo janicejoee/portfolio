@@ -125,14 +125,25 @@ export const hobbies = [
 export const skills = [
   {
     category: "Languages",
-    items: ["Python", "Java", "C", "R", "SQL", "JavaScript", "TypeScript", "VBA", "MATLAB"],
+    items: ["Python", "Java", "R", "C", "SQL", "JavaScript", "TypeScript", "VBA"],
   },
   {
-    category: "Frameworks & Libraries",
-    items: ["React", "Next.js", "Flask", "Pandas", "LangChain", "BeautifulSoup", "Selenium"],
+    category: "Frameworks",
+    items: ["React", "Next.js", "Flask", "LangChain"],
+  },
+  {
+    category: "Databases",
+    items: ["PostgreSQL", "MySQL", "Supabase", "MongoDB"],
   },
   {
     category: "Cloud & Tools",
-    items: ["AWS (Lambda, API Gateway, DynamoDB, S3)", "GCP (Vertex AI, Cloud Run, GCE)", "Docker", "Git", "Tableau", "Figma"],
+    items: ["AWS (Lambda, API Gateway, DynamoDB, S3)", "GCP (Vertex AI, Cloud Run, GCE)", "Docker", "Git"],
   },
+];
+
+export const languages = [
+  { name: "Indonesian", level: "Native" },
+  { name: "English", level: "Bilingual", credential: "IELTS 7.5" },
+  { name: "Mandarin", level: "Proficient", credential: "HSK 3" },
+  { name: "German", level: "Proficient", credential: "B1" },
 ];

@@ -3,12 +3,12 @@
 @theme {
   --font-display: "Fraunces", ui-serif, Georgia, serif;
   --font-sans: "Figtree", ui-sans-serif, system-ui, sans-serif;
-  --color-paper: #f3eee6;
-  --color-ink: #1a1612;
-  --color-muted: #6a6358;
-  --color-clay: #c24a38;
-  --color-clay-soft: #f0d8d2;
-  --color-line: #d6cdc0;
+  --color-paper: #f0efe8;
+  --color-ink: #171c1b;
+  --color-muted: #5c6563;
+  --color-clay: #1f6b63;
+  --color-clay-soft: #d5e6e3;
+  --color-line: #d0cfc5;
 }
 
 html {

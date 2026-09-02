@@ -216,6 +216,17 @@
   @apply text-muted leading-relaxed;
 }
 
+.language-group {
+  @apply grid grid-cols-[1fr_auto_auto] sm:grid-cols-[11rem_10rem_1fr] gap-x-4 sm:gap-8 py-5 first:pt-0 last:pb-0 items-baseline;
+  border-bottom: 1px solid var(--color-line);
+}
+.language-group:last-child {
+  @apply border-b-0;
+}
+.language-credential {
+  @apply text-muted leading-relaxed;
+}
+
 /* Hobbies */
 .hobby-grid {
   @apply grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-3;
@@ -235,7 +246,7 @@
 }
 .hobby-overlay {
   @apply absolute inset-0 flex items-end;
-  background: linear-gradient(to top, rgba(26, 22, 18, 0.75), transparent 55%);
+  background: linear-gradient(to top, rgba(23, 28, 27, 0.75), transparent 55%);
 }
 .hobby-title {
   @apply font-display text-lg font-medium text-paper p-4 w-full;
