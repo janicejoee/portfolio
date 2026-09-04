@@ -1,8 +1,14 @@
 export const projects = [
   {
+    title: "Unreel Recipes",
+    description: "Unreel turns Instagram cooking reels into a personal recipe library",
+    tags: ["YT-DLP", "OpenAI Whisper", "Anthropic Claude", "React.js", "Flask"],
+    link: "https://unreel-your-recipes.vercel.app/",
+  },
+  {
     title: "Personal Copilot Finance Tracker",
     description: "A full-stack AI-powered personal finance tracker for spending analysis and personalized financial insights",
-    tags: ["Plaid", "FastAPI", "PostgreSQL", "React", "Next.js", "LLM"],
+    tags: ["Plaid", "Supabase", "React.js", "Flask", "LLM"],
     link: "https://github.com/janicejoee/ai-finance-tracker",
   },
   {
